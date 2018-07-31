@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build image') {
-        sh "docker-compose build"
+        sh "docker build -t test ."
     }
 
     stage('Test image') {
