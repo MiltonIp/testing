@@ -1,0 +1,9 @@
+version: '3'
+# This is for local dev deployments. It will not grab the latest docker 
+# image for the django app from the docker repo. It will build and deploy the local
+# changes
+services:
+  testing:
+    build:
+        context: .
+        dockerfile: Dockerfile
