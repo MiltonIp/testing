@@ -7,6 +7,7 @@ node {
 
     stage('Build image') {
         sh "docker build -t test ."
+        sh "ls"
     }
 
     stage('Test image') {
