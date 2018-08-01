@@ -13,7 +13,7 @@ node {
     }
 
     stage('Test image') {
-        sh "clair-scanner -w docker-compose.yml --ip 172.18.0.4 test:latest"
+        sh "clair-scanner -w docker-compose.yml --ip 172.18.0.1 test:latest"
         sh 'echo "Tests passed"'
     }
 
